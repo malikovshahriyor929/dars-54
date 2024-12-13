@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+svg,
+i,
+button {
+  cursor: pointer;
+}
+.container2 {
+  width: 95%;
+  margin: 0 auto;
+}
+@media (min-width: 1400px) {
+  .container2 {
+    width: 1350px;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 1032px) {
+  .links {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100vh;
+    gap: 20px;
+    background-color: #fead04;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    z-index: 999;
+  }
+  #check:checked ~ .links {
+    left: 0;
+  }
+}
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  display: block;
+  /* width: 100%; */
+  height: 100%;
+  object-fit: cover;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #fead04 !important;
+  width: 20px !important;
+  border-radius: 10px !important ;
+  height: 10px !important;
+  transition: 0.4s;
+}
+.horizontal-scroll::-webkit-scrollbar {
+    height: 8px;
+  }
+  
+  .horizontal-scroll::-webkit-scrollbar-thumb {
+    background: #fead04;
+    border-radius: 4px;
+    
+  }
+  
+  .horizontal-scroll::-webkit-scrollbar-thumb:hover {
+    background: #d69302;
+    transition: 0.5s;
+  }
+  
